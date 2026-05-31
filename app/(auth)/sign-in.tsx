@@ -1,10 +1,12 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { Image, ScrollView, View } from 'react-native'
 
 export default function SignIn() {
   return (
-    <View className='flex-1 items-center justify-center bg-white'>
-      <Text className='text-xl font-bold'>sign-in</Text>
-    </View>
+    <ScrollView>
+      <View>
+        <Image />
+      </View>
+    </ScrollView>
   )
 }
