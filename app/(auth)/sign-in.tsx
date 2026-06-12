@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import React, { useState } from 'react';
 import { Image, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -37,8 +38,18 @@ export default function SignIn() {
         />
 
         <TouchableOpacity className="w-full bg-blue-600 py-4 rounded-xl items-center mb-4">
-
+          <Text className="text-white font-bold text-base">
+            Sign In
+          </Text>
         </TouchableOpacity>
+        <View className="flex-row justify-center">
+          <Text className="text-gray-500">
+            Don&apos;t have an account? 
+          </Text>
+          <Link href="/sign-up">
+            <Text className="text-blue-600 font-semibold">Sign Up</Text>
+          </Link>
+        </View>
       </View>
     </ScrollView>
   )
